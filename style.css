@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#target-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #ff4081;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#target-button:hover {
+    background: #e91e63;
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+#message h2 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#message p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Container pour le message */
+.message-container {
+    padding: 20px;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+/* Titre principal */
+.title {
+    font-size: 5vw; /* Taille relative à la largeur de la fenêtre */
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+/* Contenu principal */
+.content {
+    font-size: 2.5vw; /* Ajuste la taille du texte selon la largeur de la fenêtre */
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Signature */
+.signature {
+    font-size: 2vw; /* Plus petit pour la signature */
+    font-style: italic;
+    color: #444;
+}
+
+/* Ajustements pour écrans très étroits */
+@media (max-width: 600px) {
+    .title {
+        font-size: 7vw; /* Augmente la taille relative sur petits écrans */
+    }
+    .content {
+        font-size: 4vw;
+    }
+    .signature {
+        font-size: 3vw;
+    }
+}
